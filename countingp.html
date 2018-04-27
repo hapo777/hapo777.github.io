@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="" id="p" cols="30" rows="50"></textarea>
+    <br>
+    <button onclick="check();">p 몇번?</button>
+
+    <p id="count"></p>
+    <script>
+
+        function check() {
+            var ptext = document.getElementById("p").value;
+            var count = 0;
+            for (var i = 0; i < ptext.length; i++) {
+                if (ptext.charAt(i).toLowerCase() === "p") { count++; }
+
+            }
+            document.getElementById("count").innerHTML = count + "번 나옵니다."
+        }
+
+
+    </script>
+</body>
+
+</html>

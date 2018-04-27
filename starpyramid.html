@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        <div id="star5"></div>
+
+    <button onclick="tri1();" id="star1">왼쪽 직각</button>
+    <button onclick="tri2();" id="star2">오른쪽 직각</button>
+    <button onclick="tri3();" id="star3">왼쪽 위 직각</button>
+    <button onclick="tri4();" id="star4">오른쪽 위 직각</button>
+
+    
+
+    <script>
+        function tri1() {
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j <= i; j++) {
+                    document.getElementById("star5").innerHTML += "*";
+                }
+                document.getElementById("star5").innerHTML += "<br>";
+
+            }
+        }
+
+        function tri2() {
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j <= i; j++) {
+                    document.getElementById("star5").innerHTML += "&nbsp" ;
+                    
+                }
+                document.getElementById("star5").innerHTML += "*"
+                document.getElementById("star5").innerHTML += "<br>"
+            }
+            
+        }
+        
+
+        function tri3() {
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j <= i; j++) {
+                    document.getElementById("star").innerHTML += "*";
+                }
+                document.getElementById("star").innerHTML += "<br>";
+
+            }
+        }
+
+        function tri4() {
+
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j <= i; j++) {
+                    document.getElementById("star").innerHTML += "*";
+                }
+                document.getElementById("star").innerHTML += "<br>";
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

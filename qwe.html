@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="num1" value="0" type="Number">
+    <input id="num2" value="0" type="Number">
+    <br>
+
+    <button onclick="check();">확인</button>
+
+    <p id="text">여기에 나옴</p>
+
+    <script>
+        function check() {
+            var x = Number(document.getElementById("num1").value);
+            var y = Number(document.getElementById("num2").value);
+
+
+            if (x == y) {
+                document.getElementById("text").innerHTML = "두 값이 같음";
+            }
+            else if (x > y) {
+                document.getElementById("text").innerHTML = "왼쪽이 더 큼";
+            }
+            else if (x < y) {
+                document.getElementById("text").innerHTML = "오른쪽이 더 큼";
+            }
+
+
+        } 
+        
+    </script>
+</body>
+
+</html>

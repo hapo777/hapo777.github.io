@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<html>
+
+<head></head>
 
 <body>
-
     <input type="text" id="input1">
     <br>
     <button id="button1" onclick="showResult();">점수?</button>
@@ -17,31 +12,28 @@
 
     <script>
         function showResult() {
-            var grade = document.getElementById("input1").Value;
+            var grade = document.getElementById("input1").value;
+            grade = grade.toLowerCase();
+            // console.log(grade);
             var txt = "";
             switch (grade) {
                 case "a":
-                    txt = "80점 이상";
+                    txt = "90점 이상입니다.";
                     break;
-
                 case "b":
-                    txt = "70점 이상";
+                    txt = "80점 이상입니다.";
                     break;
-
                 case "c":
-                    txt = "60점 이상";
+                    txt = "70점 이상입니다.";
                     break;
-
                 case "d":
-                    txt = "50점 이상";
+                    txt = "60점 이상입니다.";
                     break;
-
                 case "f":
-                    txt = "50점 미만";
+                    txt = "60점 미만입니다.";
                     break;
-                    
                 default:
-                    txt = "알 수 없음";
+                    txt = "올바른 값을 넣어주세요.";
                     break;
             }
             document.getElementById("result").innerHTML = txt;
